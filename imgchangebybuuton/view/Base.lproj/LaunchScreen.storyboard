@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLo-vn-GON">
+                                <rect key="frame" x="76.666666666666686" y="366" width="240" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bag" translatesAutoresizingMaskIntoConstraints="NO" id="CLn-UF-c03">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="120"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="CLn-UF-c03" secondAttribute="bottom" id="Axu-ix-boY"/>
+                                    <constraint firstAttribute="trailing" secondItem="CLn-UF-c03" secondAttribute="trailing" id="drZ-M9-oxc"/>
+                                    <constraint firstItem="CLn-UF-c03" firstAttribute="top" secondItem="DLo-vn-GON" secondAttribute="top" id="iiG-ro-NUu"/>
+                                    <constraint firstAttribute="width" constant="240" id="jFq-Fj-pDj"/>
+                                    <constraint firstItem="CLn-UF-c03" firstAttribute="leading" secondItem="DLo-vn-GON" secondAttribute="leading" id="ygl-iu-DAQ"/>
+                                    <constraint firstAttribute="height" constant="120" id="zgX-2f-EJc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuickCart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1S-JZ-cBD">
+                                <rect key="frame" x="100" y="506" width="193" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="bgcolor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q1S-JZ-cBD" secondAttribute="trailing" constant="100" id="0qv-4D-3S0"/>
+                            <constraint firstItem="Q1S-JZ-cBD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="1Uj-Hk-YVJ"/>
+                            <constraint firstItem="DLo-vn-GON" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7zc-Ct-n0v"/>
+                            <constraint firstItem="DLo-vn-GON" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Fqf-nx-WHP"/>
+                            <constraint firstItem="Q1S-JZ-cBD" firstAttribute="top" secondItem="DLo-vn-GON" secondAttribute="bottom" constant="20" id="J0a-bi-UJC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-321" y="323"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bag" width="512" height="512"/>
+        <namedColor name="bgcolor">
+            <color red="0.40400001406669617" green="0.9100000262260437" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
